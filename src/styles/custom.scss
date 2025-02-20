@@ -18,7 +18,7 @@ body {
   width: 100%;
   padding: 16px;
   background-image: url("../../images/bg-new.png");
-  background-size: 143%;
+  background-size: initial;
   background-repeat: no-repeat;
   background-position: top;
   background-color:#212127 ;
@@ -34,8 +34,8 @@ body {
   h1 {
     font-family: "SF Pro Display",  sans-serif;
     font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 25px;
+    line-height: 23px;
     color: #ffffff;
     span {
       opacity: 0.7;
@@ -43,24 +43,24 @@ body {
     }
   }
   &-header {
-    padding-bottom: 106px;
+    padding-bottom: 30px;
 
     .logo {
-      max-width: 110px;
-      height: 32px;
+      max-width: 70px;
+      height: 18px;
     }
     .user-icon{
-      width: 40px;
-      height: 40px;
+      width: 28px;
+      height: 28px;
       border: 2px solid #0B0B0F;
       position: absolute;
       top: 30px;
       &:first-child {
-        right: 100px;
+        right: 73px;
         z-index: 100;
       }
       &:nth-child(2) {
-        right: 65px;
+        right: 52px;
         z-index: 10;
       }
       &:nth-child(3) {
@@ -166,6 +166,41 @@ body {
 
 }
 
-@media screen and (max-width: 600px) {
+
+@media (min-width: 375px) {
+  .search-component {
+    background-size: 143%;
+    h1 {
+      font-size: 32px;
+      line-height: 38px;
+    }
+    &-header {
+      padding-bottom: 106px;
+      .logo {
+        max-width: 110px;
+        height: 32px;
+      }
+      .user-icon{
+        width: 40px;
+        height: 40px;
+        border: 2px solid #0B0B0F;
+        position: absolute;
+        top: 30px;
+        &:first-child {
+          right: 100px;
+          z-index: 100;
+        }
+        &:nth-child(2) {
+          right: 65px;
+          z-index: 10;
+        }
+        &:nth-child(3) {
+          right: 30px;
+          z-index: 1;
+        }
+
+      }
+    }
+  }
 
 }
